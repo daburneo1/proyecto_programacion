@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.3.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.3.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="f5ef72e6-10b9-4961-ac7b-8343dfbef363" data-root-id="1002"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1118">
+          {"5e2bc056-7d1b-4983-964b-6e65f925a531":{"roots":{"references":[{"attributes":{},"id":"1053","type":"Selection"},{"attributes":{},"id":"1012","type":"BasicTicker"},{"attributes":{"dimension":1,"plot":{"id":"1002","subtype":"Figure","type":"Plot"},"ticker":{"id":"1017","type":"BasicTicker"}},"id":"1020","type":"Grid"},{"attributes":{"callback":null,"tooltips":[["Goles","@Goles"],["Pais","@Pais"],["Jugadores del pais","@Jugadores"],["Tarjetas amarillas","@Amarillas"],["Tarjetas rojas","@Rojas"]]},"id":"1044","type":"HoverTool"},{"attributes":{"axis_label":"Goles por pais","formatter":{"id":"1051","type":"BasicTickFormatter"},"plot":{"id":"1002","subtype":"Figure","type":"Plot"},"ticker":{"id":"1017","type":"BasicTicker"}},"id":"1016","type":"LinearAxis"},{"attributes":{"source":{"id":"1001","type":"ColumnDataSource"}},"id":"1040","type":"CDSView"},{"attributes":{"callback":null},"id":"1003","type":"DataRange1d"},{"attributes":{},"id":"1021","type":"PanTool"},{"attributes":{},"id":"1025","type":"ResetTool"},{"attributes":{"callback":null},"id":"1005","type":"DataRange1d"},{"attributes":{},"id":"1009","type":"LinearScale"},{"attributes":{"callback":null,"data":{"Amarillas":[244,261,0,44,119,2,43,1,9,45,29,302,246,74,1,101,136,102,84,52,7,0,32,55,62,17,2,146,1714,526,10,1,26,224,73,255,0,1,0,48,538,24,25,0,3,101,8,32,23,85,465,20,378,1,164,430,40,5454,67,0],"Amarillas/Jugador":{"__ndarray__":"w/UoXI9CIEDD9Shcj8IaQAAAAAAAAAAAKVyPwvUoGUCuR+F6FK4WQHE9CtejcOU/KVyPwvWoLEAfhetRuB7VPwAAAAAAABJArkfhehSuC0AAAAAAAAAdQDMzMzMzMx5AAAAAAACAJEDD9Shcj8IWQAAAAAAAAOA/cT0K16NwFkC4HoXrUbgYQGZmZmZmZh9AAAAAAAAANUDXo3A9ClchQAAAAAAAAAxAAAAAAAAAAAAAAAAAAAAgQIXrUbgehfs/KVyPwvWoJEAAAAAAAAAhQAAAAAAAAABAj8L1KFyPGkB7FK5H4XohQOF6FK5H4R9AAAAAAAAAFEAAAAAAAADwP65H4XoUrg1AexSuR+F6I0BSuB6F61EYQI/C9ShcjxtAAAAAAAAAAAAfhetRuB7VPwAAAAAAAAAAAAAAAAAAKEDNzMzMzEwkQAAAAAAAACBAKVyPwvUoAkAAAAAAAAAAAAAAAAAAAAhAXI/C9ShcEkAAAAAAAAAgQAAAAAAAACBAexSuR+F6BEAAAAAAAEBVQHsUrkfheg5ArkfhehSuGkCF61G4HoUfQAAAAAAAAOA/PQrXo3A9GUAfhetRuB4jQAAAAAAAACBArkfhehSuI0DXo3A9ClcmQAAAAAAAAAAA","dtype":"float64","shape":[60]},"Arqueros":[3,3,0,0,4,0,1,0,0,1,0,1,2,1,0,1,1,2,0,1,0,0,0,5,0,0,1,0,14,7,0,0,1,1,1,1,0,0,0,0,5,0,0,0,0,2,0,0,1,0,6,1,7,0,0,4,0,40,0,1],"Defensa":[8,8,0,4,1,1,0,0,0,1,0,8,3,1,0,2,6,5,2,2,0,0,0,2,1,1,0,8,54,22,1,0,3,6,3,7,0,0,0,1,12,2,0,0,0,4,1,1,2,0,28,1,14,0,4,13,2,140,0,0],"Delanteros":[8,16,0,2,11,1,0,1,0,4,4,15,10,7,1,10,4,1,2,1,1,1,2,15,1,1,0,8,75,19,1,0,2,11,3,16,0,0,0,1,16,0,5,1,0,8,0,1,5,0,61,1,10,0,10,17,3,202,2,1],"Goles":[243,337,2,32,108,0,6,0,2,77,18,465,262,73,3,185,89,51,5,15,9,0,46,451,47,6,0,32,1641,203,43,0,65,157,26,230,3,0,0,19,422,9,22,0,10,126,0,6,74,68,1204,21,315,0,55,302,109,4987,38,103],"Goles/Jugador":{"__ndarray__":"MzMzMzMzIEBI4XoUrkchQAAAAAAAAABASOF6FK5HEkCPwvUoXI8UQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAPA/rkfhehSuF0AAAAAAAAASQD0K16NwPSdA16NwPQrXJUB7FK5H4XoWQAAAAAAAAPg/j8L1KFyPJEAzMzMzMzMQQFyPwvUoXA9AAAAAAAAA9D8AAAAAAAAEQAAAAAAAABJAAAAAAAAAAAAAAAAAAAAnQK5H4XoULixAUrgehetRH0AAAAAAAAAIQAAAAAAAAAAAMzMzMzMz9z89CtejcL0gQKRwPQrXowhAAAAAAACANUAAAAAAAAAAABSuR+F6lCJAUrgehetRG0Bcj8L1KFwBQOF6FK5H4RhAAAAAAAAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE0DXo3A9CtcfQAAAAAAAAAhAAAAAAAAAAEAAAAAAAAAAAAAAAAAAACRA7FG4HoXrFkAAAAAAAAAAAAAAAAAAAPg/cT0K16NwIEAAAAAAAABRQD0K16NwvSNAAAAAAAAAHEA9CtejcD0aQAAAAAAAAAAA9ihcj8L1AEDXo3A9CtcaQM3MzMzMzDVAAAAAAAAAIkBSuB6F61EZQJqZmZmZmTRA","dtype":"float64","shape":[60]},"Jugadores":[30,39,1,7,21,3,3,3,2,13,4,40,24,13,2,18,22,13,4,6,2,1,4,32,6,2,1,22,196,66,2,1,7,23,12,37,1,3,1,4,53,3,11,1,1,22,1,4,9,1,122,3,48,2,26,45,5,554,6,5],"Latitud":{"__ndarray__":"AAAAAAAAGEAAAAAAAABAQAAAAAAAgEdAAAAAAAAAPcAAAAAAAABKQAAAAAAAAPC/9ihcj8KVSEC4HoXrUZhEQAAAAAAAADlAMzMzMzMzSEAAAAAAAAAmQAAAAAAAQDNAAAAAAAAATkDNzMzMzEw/QAAAAAAAAPA/uB6F61GYR0AAAAAAAIBHQJqZmZmZuUhAhetRuB4FM0AzMzMzM7NEQI/C9ShcjypAAAAAAACAQUAAAAAAAAAQQAAAAAAAgEdAAAAAAAAAMUAAAAAAAAAgQClcj8L1KLw/XI/C9SjcLEAAAAAAAEBBwB+F61G4PkVAexSuR+H6KkAzMzMzMzMZQAAAAAAAAENAAAAAAAAAIEAAAAAAAIBDQAAAAAAAAExA4XoUrkchMkAAAAAAAAA5QAAAAAAAADTAAAAAAAAAMEDNzMzMzIxGQAAAAAAAADRAAAAAAAAAQkAAAAAAAAAuQIXrUbgehfM/AAAAAAAAT0AAAAAAAABBQK5H4XoULkVAAAAAAAAALkAAAAAAAIBNQAAAAAAAADfAAAAAAAAATEAAAAAAAIBJQAAAAAAAAPC/AAAAAAAAIEAAAAAAAABHQAAAAAAAACJAAAAAAAAAQcAAAAAAAADwv83MzMzMTDVA","dtype":"float64","shape":[60]},"Longitud":{"__ndarray__":"AAAAAAAAKEAAAAAAAAAUwAAAAAAAAD1AAAAAAAAAOEAAAAAAAAA0QGZmZmZm5iZAZmZmZmbmXsA9CtejcH0zQKRwPQrXIyjAzczMzMxMM0AAAAAAAAAkwIXrUbgexVjAAAAAAAAAWUCamZmZmTlBQAAAAAAAAENA4XoUrkdhKkAAAAAAAAAgQJqZmZmZmS5AmpmZmZlJUMAzMzMzM3M1QNejcD0KVzDAAAAAAABAWkAAAAAAAABMwAAAAAAAADRAAAAAAAAAEMCamZmZmZnxP3E9CtejcBlAhetRuB5FMcAAAAAAAABMwHsUrkfh+ihAMzMzMzMjVsCamZmZmZkiwAAAAAAAQFjAAAAAAACAUMAAAAAAAAA2QAAAAAAAACRAZmZmZmaWUMAAAAAAAIBGQAAAAAAAgEdAAAAAAAAAOMCamZmZmZkuQAAAAAAAACjAAAAAAABAYUAAAAAAAABZQPYoXI/CFUBAAAAAAAAALkAAAAAAAAAiQArXo3A9ijRAMzMzMzOTVcAAAAAAAAA6QAAAAAAAAE3AAAAAAAAAOEAAAAAAAAAiQAAAAAAAAC5AAAAAAAAAFMAAAAAAAAA5QDMzMzMz01PAAAAAAAAAUMAAAAAAAAAuQAAAAAAAAFTA","dtype":"float64","shape":[60]},"Medio_Campo":[11,12,1,1,5,1,2,2,2,7,0,16,9,4,1,5,11,5,0,2,1,0,2,10,4,0,0,6,53,18,0,1,1,5,5,13,1,3,1,2,20,1,6,0,1,8,0,2,1,1,27,0,17,2,12,11,0,172,4,3],"Pais":["Camerun","Marruecos","Moldavia","Sudafrica","Polonia","Gabon","Canada","Albania","Sahara Occidental","Eslovaquia","Guinea","Mexico","Rusia","Israel","Kenia","Austria","Suiza","Republica Checa","Bolivia","Macedonia","Gambia","China","Surinam","Hungria","Mali","Togo","Santo Tome y Principe","Senegal","Uruguay","Italia","El Salvador","Liberia","Estados Unidos","Venezuela","Grecia","Dinamarca","Puerto Rico","Arabia Saudi","Madagascar","Cabo Verde","Croacia","Mauritania","Japon","Tailandia","Uganda","Suecia","Tunez","Kosovo","Honduras","Estonia","Paraguay","Lituania","Alemania","Republica del Congo","Costa de Marfil","Rumania","Panama","Argentina","RD Congo","Cuba"],"Porcentaje":{"__ndarray__":"7FG4HoXr0T8K16NwPQrXP3sUrkfheoQ/uB6F61G4rj9SuB6F61HIP7gehetRuJ4/uB6F61G4nj+4HoXrUbieP3sUrkfhepQ/uB6F61G4vj97FK5H4XqkP65H4XoUrtc/KVyPwvUozD+4HoXrUbi+P3sUrkfhepQ/w/UoXI/CxT+amZmZmZnJP7gehetRuL4/exSuR+F6pD+4HoXrUbiuP3sUrkfhepQ/exSuR+F6hD97FK5H4XqkPzMzMzMzM9M/uB6F61G4rj97FK5H4XqUP3sUrkfheoQ/mpmZmZmZyT8fhetRuB79P4XrUbgeheM/exSuR+F6lD97FK5H4XqEP7gehetRuK4/4XoUrkfhyj8pXI/C9Si8P8P1KFyPwtU/exSuR+F6hD+4HoXrUbieP3sUrkfheoQ/exSuR+F6pD9cj8L1KFzfP7gehetRuJ4/mpmZmZmZuT97FK5H4XqEP3sUrkfheoQ/mpmZmZmZyT97FK5H4XqEP3sUrkfheqQ/exSuR+F6tD97FK5H4XqEPxSuR+F6FPI/uB6F61G4nj8pXI/C9SjcP3sUrkfhepQ/uB6F61G4zj/hehSuR+HaP5qZmZmZmak/hetRuB6FFEC4HoXrUbiuP5qZmZmZmak/","dtype":"float64","shape":[60]},"Rojas":[17,37,0,3,11,0,4,0,0,3,1,29,21,4,0,7,7,10,8,4,1,0,3,12,4,1,1,9,122,58,0,0,0,15,5,14,0,0,0,4,30,1,1,0,0,9,0,2,1,6,60,5,27,0,13,35,1,427,5,1],"Rojas/Jugador ":{"__ndarray__":"PQrXo3A94j9mZmZmZmbuPwAAAAAAAAAAhetRuB6F2z+kcD0K16PgPwAAAAAAAAAASOF6FK5H9T8AAAAAAAAAAAAAAAAAAAAAcT0K16NwzT8AAAAAAADQP1yPwvUoXOc/KVyPwvUo7D/Xo3A9CtfTPwAAAAAAAAAA9ihcj8L12D97FK5H4XrUP6RwPQrXo+g/AAAAAAAAAEBxPQrXo3DlPwAAAAAAAOA/AAAAAAAAAAAAAAAAAADoP1K4HoXrUdg/cT0K16Nw5T8AAAAAAADgPwAAAAAAAPA/PQrXo3A92j/Xo3A9CtfjPylcj8L1KOw/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzczMzMzM5D/hehSuR+HaP1K4HoXrUdg/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8D89CtejcD3iPx+F61G4HtU/CtejcD0Ktz8AAAAAAAAAAAAAAAAAAAAAPQrXo3A92j8AAAAAAAAAAAAAAAAAAOA/KVyPwvUovD8AAAAAAAAYQFyPwvUoXN8/uB6F61G4+j/sUbgehevhPwAAAAAAAAAAAAAAAAAA4D/2KFyPwvXoP5qZmZmZmck/pHA9Ctej6D+PwvUoXI/qP5qZmZmZmck/","dtype":"float64","shape":[60]},"index":[21,16,96,49,32,76,75,77,84,37,70,15,27,38,81,33,31,40,62,56,80,104,65,20,51,79,99,30,4,9,87,89,48,28,41,17,94,71,97,63,10,72,42,92,93,29,105,67,47,100,6,74,12,86,25,14,60,1,50,61]},"selected":{"id":"1053","type":"Selection"},"selection_policy":{"id":"1054","type":"UnionRenderers"}},"id":"1001","type":"ColumnDataSource"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1029","type":"BoxAnnotation"},{"attributes":{"below":[{"id":"1011","type":"LinearAxis"}],"left":[{"id":"1016","type":"LinearAxis"}],"renderers":[{"id":"1011","type":"LinearAxis"},{"id":"1015","type":"Grid"},{"id":"1016","type":"LinearAxis"},{"id":"1020","type":"Grid"},{"id":"1029","type":"BoxAnnotation"},{"id":"1039","type":"GlyphRenderer"}],"title":{"id":"1043","type":"Title"},"toolbar":{"id":"1027","type":"Toolbar"},"x_range":{"id":"1003","type":"DataRange1d"},"x_scale":{"id":"1007","type":"LinearScale"},"y_range":{"id":"1005","type":"DataRange1d"},"y_scale":{"id":"1009","type":"LinearScale"}},"id":"1002","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1022","type":"WheelZoomTool"},{"attributes":{"plot":null,"text":"Numero de Jugadores"},"id":"1043","type":"Title"},{"attributes":{"data_source":{"id":"1001","type":"ColumnDataSource"},"glyph":{"id":"1037","type":"Circle"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1038","type":"Circle"},"selection_glyph":null,"view":{"id":"1040","type":"CDSView"}},"id":"1039","type":"GlyphRenderer"},{"attributes":{},"id":"1007","type":"LinearScale"},{"attributes":{"plot":{"id":"1002","subtype":"Figure","type":"Plot"},"ticker":{"id":"1012","type":"BasicTicker"}},"id":"1015","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"size":{"units":"screen","value":10},"x":{"field":"Jugadores"},"y":{"field":"Goles"}},"id":"1038","type":"Circle"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1021","type":"PanTool"},{"id":"1022","type":"WheelZoomTool"},{"id":"1023","type":"BoxZoomTool"},{"id":"1024","type":"SaveTool"},{"id":"1025","type":"ResetTool"},{"id":"1026","type":"HelpTool"},{"id":"1044","type":"HoverTool"}]},"id":"1027","type":"Toolbar"},{"attributes":{"axis_label":"Jugadores","formatter":{"id":"1049","type":"BasicTickFormatter"},"plot":{"id":"1002","subtype":"Figure","type":"Plot"},"ticker":{"id":"1012","type":"BasicTicker"}},"id":"1011","type":"LinearAxis"},{"attributes":{},"id":"1026","type":"HelpTool"},{"attributes":{},"id":"1017","type":"BasicTicker"},{"attributes":{},"id":"1051","type":"BasicTickFormatter"},{"attributes":{"fill_color":{"value":"green"},"line_color":{"value":"green"},"size":{"units":"screen","value":10},"x":{"field":"Jugadores"},"y":{"field":"Goles"}},"id":"1037","type":"Circle"},{"attributes":{},"id":"1024","type":"SaveTool"},{"attributes":{},"id":"1054","type":"UnionRenderers"},{"attributes":{"overlay":{"id":"1029","type":"BoxAnnotation"}},"id":"1023","type":"BoxZoomTool"},{"attributes":{},"id":"1049","type":"BasicTickFormatter"}],"root_ids":["1002"]},"title":"Bokeh Application","version":"1.0.3"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1118').textContent;
+                  var render_items = [{"docid":"5e2bc056-7d1b-4983-964b-6e65f925a531","roots":{"1002":"f5ef72e6-10b9-4961-ac7b-8343dfbef363"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
